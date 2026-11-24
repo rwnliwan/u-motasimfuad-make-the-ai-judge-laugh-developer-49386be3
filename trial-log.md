@@ -1,0 +1,37 @@
+# Trial log — u-motasimfuad-make-the-ai-judge-laugh-developer-49386be3
+
+- Slug: u-motasimfuad-make-the-ai-judge-laugh-developer-49386be3
+- Title: Make the AI Judge Laugh: Developer Excuses
+- Opens: 2026-11-24 09:28:01Z — Closes: 2026-11-24 20:30:00Z (25 Nov 04:30 WITA), 11 hours
+- Prize: $3 total, top 10 (1st $0.92, 2nd $0.65, 3rd $0.45, 4th $0.32, 5th $0.22, 6th $0.16, 7th $0.11, 8th $0.08, 9th $0.06, 10th $0.04), entry free
+- Submissions so far: 683 (field from comp-1.json, read 24 Nov ~18:20 WITA)
+- Deliverable: main.ts (Node 22) in repo root, writes /output/entry.txt
+- Gate: UTF-8 text, 1-200 characters, not whitespace-only
+- Judge: AI judge (z-ai/glm-5.3-flash, blind head-to-head, margin 1-5, no ties), criteria in order: (1) genuine single-line developer excuse about code breaking in production, (2) twist a developer recognises, revealing what really happened, (3) sounds like something a developer would actually say, jargon used right, (4) tight one line, every word earning its place, (5) fresh — avoid worn excuses or turn one in a new way. Blind rounds: scores hidden until results published.
+- Kit: ~/workspace/make-fun/ten-prog/kit-1-dir/u-motasimfuad-make-the-ai-judge-laugh-developer-49386be3-kit/ (kit.json bundle_sha256 a0547ab21a638a5b4f450bcb611245b94ca9408a7387f54b08158b889c97ea2c matches API bundleSha256; NOTE: kit lives one level deeper than the task text assumed — cli is at kit-1-dir/<slug>-kit/cli/makefun.mjs)
+- Wallet (owner.json): FwUebjzYUBF6uybmEkUkiQf9z35bGGQuUE3GrToXFcUq
+
+## Field analysis (683 submissions, 525 distinct titles)
+
+Saturated angles to avoid: "worked on my machine" 25+, staging 30, rollback 19, hotfix 12, "tests passed" 7, "only changed one line" 8, "it works" 9. 108 titles are just the competition title, 26 just "Developer Excuses" (placeholder titles, not real entries).
+
+## Candidates (drafted, all <200 chars, char counts by Python)
+
+| # | Excuse | Chars | Notes |
+|---|---|---|---|
+| 1 | **FINAL:** The load balancer finally noticed the server I've been SSH-ing into for a year was never actually in the cluster. | 113 | Fresh angle: "SSH", "cluster", "load balancer" each 0 occurrences in all 683 submissions. Twist reveals the real cause; developer voice; jargon correct |
+| 2 | It worked on my machine because my machine still has the environment variable I deleted from production last Tuesday. | 117 | REJECTED — near-duplicate of an existing entry: "It worked on my machine — my laptop had been quietly inventing the environment variable production just deleted." |
+| 3 | Production crashed because my temporary debug endpoint from 2023 finally got discovered, by our own monitoring. | 111 | REJECTED — collides with existing temporary-fix entries ("My 'temporary' fix from 2019 just became load-bearing", "The Temporary Endpoint Runs Payroll") |
+| 4 | The migration passed because I ran it against the database labelled staging, which is production with a calmer name. | 116 | Backup — staging angle is saturated (30 titles) despite a distinct label-confusion twist |
+| 5 | I fixed it by restarting the service, which worked, because the bug only exists while the service is running. | 109 | Backup — restart angle nearly fresh (1 title) but the joke is meta rather than a spoken excuse |
+
+## Trials
+
+| Round | Version | Size | Result | Change |
+|---|---|---|---|---|
+| 0 | (pre-build) trial log + facts + field analysis recorded | — | — | — |
+| 1 | Builder v1 — main.ts, entry #1 (113 chars) | 113 chars / 113 bytes, 1 line, UTF-8, non-whitespace | PASS — local run via ENTRY_OUTPUT twice, byte-identical | Builder session a7ef69cc-1563-41a2-b5db-19b71b939e9c |
+
+## Status
+- NOT YET SUBMITTED. Entry final (113 chars) + repo to be pushed. NEXT: GitHub repo create + push, bundle, check, report to coordinator for re-bundle + re-check + submit (submit needs Septian ACC).
+- Deadline 25 Nov 04:30 WITA — ~10 hours left at build time; no rush, entry free.
